@@ -25,6 +25,7 @@ jobs:
   check:
     name: Check for Vulnerabilities
     runs-on: ubuntu-latest
+    timeout-minutes: 5
 
     steps:
       - if: github.actor == 'dependabot[bot]' || github.event_name == 'merge_group'
